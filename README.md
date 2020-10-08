@@ -1,6 +1,6 @@
 # Todo-App
 
-A simple application for keeping track of daily todo lists with Completed and Incompleted filters.
+A simple application for keeping track of daily todo lists with Completed and Not Completed filters.
 
 [initial]: https://github.com/akarshs27/Todo-App/blob/main/assets/todo-initial.png
 [completed]: https://github.com/akarshs27/Todo-App/blob/main/assets/todo-completed.PNG
