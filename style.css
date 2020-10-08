@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+header , form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin-bottom: 3.5rem;
+}
+
+form input {
+    width: 25vw;
+    color: #11998e;
+}
+
+form input,
+form button {
+    background: white;
+    border: none;
+    padding: 0.6rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+form button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fas {
+        color: #11998e;
+        background: -webkit-linear-gradient(#11998e, #38ef7d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;     
+}
+
+.todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-list {
+    list-style: none;
+    width: 30%;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    display: flex;
+    color: #11998e;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    transition: all 0.5s ease;
+}
+
+.todo li {
+    flex: 1;
+    max-width: 80%;
+    overflow-wrap: break-word;
+}
+
+.btn-complete , .btn-trash {
+    border: none;
+    background: white;
+    margin-left: 1.1rem;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+} 
+
+.fa-check , .fa-trash {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select { 
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin-left: 1rem;
+    position: relative;
+    overflow: hidden;    
+}
+
+select {
+    color: #11998e;
+    cursor: pointer;
+    width: 10rem;
+    padding: 0.6rem;
+    transition: all 0.3s ease;
+} 
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: -11px;
+    right: -8px;
+    color: #11998e;
+    background: -webkit-linear-gradient(#11998e, #38ef7d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    padding: 1rem;
+    pointer-events: none;
+}
